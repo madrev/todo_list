@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+   /*background-color: #ebfd55;*/
+   background: linear-gradient(red, yellow);
+   font-family: fantasy;
+ }
+
+ ul {
+   list-style-type: none;
+   padding: 0;
+ }
+
+ button {
+    padding: 5x 0;
+    border-radius: 5px;
+    background: #48e2e0;
+ }
+
+ .list-container {
+   width: calc(100% - 100px);
+   margin: 0px auto;
+ }
+
+ .todo-list-item {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ .todo-list-item button {
+   margin: 0 5px;
+   /*text-align: right;*/
+ }
+
+ .todo-list-item span {
+   display: block;
+
+ }
+
+ .new-todo-form {
+   display: flex;
+   flex-direction: column;
+ }
+ .new-todo-form button{
+   width: 30%;
+   margin: 10px auto;
+ }
+
+.new-todo-form input, textarea {
+  margin: 10px 0;
+  height: 30px;
+  border: 2px solid black;
+}
